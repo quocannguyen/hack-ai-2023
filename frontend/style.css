@@ -1,0 +1,88 @@
+@font-face{
+    font-family: 'PTSans';
+    src: url(/frontend/fonts/PTSansNarrow-Regular.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: PTSans;
+}
+
+button {
+    font-size: 20px;
+    padding: 2px 20px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #191919;
+}
+
+button:hover {
+    background: #F15025;
+}
+
+.container {
+    height: 100vh;
+}
+
+.header {
+    background: #E6E8E6;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.header-left {
+    margin-left: 20px;
+    font-size: 28px;
+    color: #F15025;
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.mid-page {
+    background: #CED0CE;
+    height: 90vh;
+}
+
+.header-info {
+    border: 1px solid;
+    width: 500px;
+    height: 300px;
+}
+
+.disk {
+    position: absolute;
+    width: 100vh;
+    top: 50%;
+    left: 40%;
+    -webkit-animation:spin 6s linear infinite;
+    -moz-animation:spin 6s linear infinite;
+    animation:spin 6s linear infinite;
+}
+
+.disk:hover {
+    animation: none;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
