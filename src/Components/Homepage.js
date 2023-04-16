@@ -1,5 +1,5 @@
 import React from "react";
-import x from './styles/style.module.css'
+import x from './styles/style.module.css';
 import cd from './img/cd.png';
 import { Link } from "react-router-dom";
 
