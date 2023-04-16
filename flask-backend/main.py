@@ -9,7 +9,7 @@ def recordAudio():
     p = pyaudio.PyAudio()
     stream = p.open(format=FORMAT, channels = CHANNELS, rate=RATE, input=True,frames_per_buffer=CHUNK)
 
-    print("Begin recording")
+    print("Begin recording now")
     frames = []
     seconds = int(input('How many seconds do you want to hum for: '))
     for i in range(0, int(RATE/CHUNK*seconds)):
