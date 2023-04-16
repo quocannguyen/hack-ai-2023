@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Homepage = () => {
     return(
-        <div className={x.container}>
+    <div className= {x.container}>
             <div className={x.header}>
                 <div className={x.headerLeft}>
                     <h1>ll</h1>

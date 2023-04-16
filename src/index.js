@@ -7,6 +7,7 @@ import Login from './Components/Login';
 import Signup from './Components/Signup';
 import Input from './Components/Input';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 const router = createBrowserRouter([
  { path: "/",
   element: <App />},
@@ -19,13 +20,11 @@ const router = createBrowserRouter([
   {
     path:"input",
     element: <Input />,
-  }
+  },
 ]
 );
 root.render(
-  <React.StrictMode>
   <RouterProvider router={router}></RouterProvider>
-  </React.StrictMode>
   
 );
 
