@@ -24,14 +24,14 @@ const Login = () => {
                                     <label for = "remember-me">Remember Me</label>
                                 </div>
                                 <div className = {styles.passLink}>
-                                    <Link to='input'>Forgot Password?</Link>
+                                    <Link to='/input'>Forgot Password?</Link>
                                 </div>
                             </div>
                             <div className = {styles.field}>
-                                <Link to={'input'}><input type = "submit" value = "Login"/></Link>
+                                <Link to={'/input'}><input type = "submit" value = "Login"/></Link>
                             </div>
                             <div className = {styles.signupLink}>
-                                Not a member?  <Link to={'signup'}>Signup Now</Link>
+                                Not a member?  <Link to={'/signup'}>Signup Now</Link>
                             </div>
                         </form>
                 </div>
